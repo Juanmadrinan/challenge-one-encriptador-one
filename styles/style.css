@@ -13,7 +13,7 @@ html {
     font-family: 'Baloo 2', sans-serif;
     font-family: 'Inter', sans-serif;
     background-color: #fff9ef;
-    background-size: 224px;
+    /* background-size: 224px; */
 }
 
 main {
@@ -43,7 +43,6 @@ h1 {
     font-weight: 500;
     font-size: 2.5em;
     letter-spacing: .5px;
-
 }
 
 p {
@@ -53,61 +52,46 @@ p {
     font-weight: 100;
     font-size: 1em;
     letter-spacing: .5px;
-    
 }
 
 p strong {
     color: #000000;
     font-weight: 700;
 }
+
 code {
-    font-family:
-        Menlo,
-        Monaco,
-        Lucida Console,
-        Liberation Mono,
-        DejaVu Sans Mono,
-        Bitstream Vera Sans Mono,
-        Courier New,
-        monospace;
+    font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
 }
 
-#Left{
-    /* background-color: red; */
+#Left {
     width: 70vw;
     height: 100vh;
-
-
 }
 
 #Rigth {
-    /* background-color: orangered; */
     width: 30vw;
     height: 100vh;
     padding: 4vh 7vh 4vh 7vh;
-
 }
 
 #CajaEncriptador {
-
     width: 50vw;
     height: 80vh;
-    display: flex;    
+    display: flex;
     justify-content: center;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-
 }
 
 #CajaResultado {
     display: flex;
     background-color: white;
     box-sizing: border-box;
-    padding: 2vw 5vh; 
+    padding: 2vw 5vh;
     border-radius: 10px;
     filter: drop-shadow(-1.5px 12px 8px #eee8df);
-    flex-direction: column;  
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 96vh;
@@ -139,10 +123,9 @@ code {
 
 #VisibilidadTexto {
     visibility: hidden;
-
 }
 
-#VisibilidadTexto p{
+#VisibilidadTexto p {
     font-size: 3.5vh;
     font-weight: 700;
     line-height: 1.3;
@@ -169,12 +152,13 @@ textarea {
     font-weight: 300;
     display: flex;
     bottom: 50%;
-    
 }
-.aviso svg{
+
+.aviso svg {
     width: 1.2em;
     margin: 0;
 }
+
 .svgSecurity {
     width: 98%;
 }
@@ -197,7 +181,6 @@ textarea {
 .divTexto p {
     font-weight: 400;
     color: #495057;
-
 }
 
 textarea {
@@ -206,7 +189,7 @@ textarea {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    text-align: left; /* Alinea el texto a la derecha */
+    text-align: left;
     resize: none;
     font-size: 1.5em;
 }
@@ -219,8 +202,8 @@ textarea::placeholder {
     position: absolute;
     top: 0;
     left: 0;
-    margin-left: 5px; /* Ajusta esto al espacio que desees entre el borde del input y el texto */
-    margin-top: 5px; /* Ajusta esto al espacio que desees entre el borde del input y el texto */
+    margin-left: 5px;
+    margin-top: 5px;
     font-size: 1em;
 }
 
@@ -233,7 +216,6 @@ textarea::placeholder {
     text-align: center;
     display: block;
     width: 100%;
-
 }
 
 .TituloPrincipal {
@@ -245,7 +227,7 @@ textarea::placeholder {
     margin-left: 2vw;
     margin-right: 2vw;
     margin-top: 2vh;
-    margin-bottom: 4vh;
+    margin-bottom: 4.5vw;
 }
 
 #VisibilidadTexto {
@@ -257,16 +239,15 @@ textarea::placeholder {
     top: 1vh;
     right: 1vw;
     background-color: rgba(255, 255, 255, 0.9);
-
 }
 
 .divTextoEncriptado {
-    overflow: auto; /* Evita que el texto se desborde */
+    overflow: auto;
     word-wrap: break-word;
-    text-overflow: ellipsis; /* Agrega puntos suspensivos (...) si el texto es demasiado largo */
+    text-overflow: ellipsis;
 }
 
-.round-button{
+.round-button {
     font-family: 'Baloo 2', sans-serif;
     font-family: 'Inter', sans-serif;
     color: #343a40;
@@ -286,21 +267,170 @@ textarea::placeholder {
     color: #495057;
 }
 
-.svg-copy{
+.svg-copy {
     display: inline-block;
     width: 45px;
-    margin: 0 auto; /* Positions the element in the center horizontally */
-    text-align: center; /* Centers the content inside the element */
+    margin: 0 auto;
+    text-align: center;
 }
 
-.svg-copy{
-
+.svg-copy {
     display: inline-block;
     width: 45px;
-
 }
 
 #Copy {
     visibility: collapse;
-    
 }
+
+@media (max-width: 768px){
+    main {
+        display: block;
+    }
+
+    .TituloPrincipal {
+        font-size: 2.25em;
+        text-align: center;
+        justify-content: center;
+    }
+
+    #Left {
+        width: 100%;
+    }
+
+    #Rigth {
+        width: 100%;
+    }
+
+    #CajaEncriptador {
+        height: auto;
+
+    }
+
+    #CajaResultado {
+        height: auto;
+        
+    }
+
+    #TituloPrincipal {
+        font-size: 25px;
+        justify-content: center;
+    }
+
+    textarea {
+        width: 100%;
+        height: 50vh;
+    }
+
+}
+
+
+@media (max-width: 450px) {
+    main {
+        display: block;
+        padding: auto;
+    }
+
+    .TituloPrincipal {
+        font-size: 1.25em ;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .divInput label {
+        font-size: 1em;
+    }
+
+    .botones {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+    .svgSecurity {
+        
+        width: 98%;
+    }
+    
+    .divTexto {
+        text-align: center;
+    }
+    
+    .divTexto h3 {
+        font-size: 3vh;
+        font-weight: 800;
+        line-height: 1.3;
+        color: #343a40;
+        letter-spacing: normal;
+        margin-left: 2vw;
+        margin-right: 2vw;
+        margin-bottom: 2vh;
+    }
+    
+    .divTexto p {
+        font-size: 14px;
+        font-weight: 400;
+        color: #495057;
+    }
+
+    #Encriptar {
+        width: 30vh;
+        height: 6vh;
+        border: solid 0px;
+        background-color: #ff8911;
+        color: #ffffff;
+        font-size: 0.85em;
+        border: 0px;
+        border-radius: 10px;
+        margin-bottom: 1vh;
+        cursor: pointer;
+    }
+    
+    #Desencriptar {
+        width: 30vh;
+        height: 6vh;
+        border: solid 1px;
+        background-color: #fff9ef;
+        color: #ff8911;
+        font-size: 0.85em;
+        border-radius: 10px;
+        border-color: #ff8911;
+        cursor: pointer;
+    }
+
+    #Left {
+        width: 100%;
+        height: max-content;
+        margin-left: 4vw;
+        margin-right: 2vw;
+    }
+
+    #Rigth {
+        height: min-content;
+        width: 100%;
+        padding: 6vh 7vw;
+    }
+
+    #CajaEncriptador {
+        width: 100%;
+        height: auto;
+        margin: 0;
+
+    }
+
+    #CajaResultado {
+        height: auto;
+        padding: 6vh 13vw;
+        margin-bottom: 5px;
+    }
+
+    textarea {
+        width: 100%;
+        height: 40vh;
+    }
+}
+
+
